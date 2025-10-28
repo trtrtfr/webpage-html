@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BhoomiRaksha | Property Management</title>
+  <link rel="icon" href="favicon.ico">
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lottie Animation -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fff9;
+      color: #222;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #1e8449, #52be80);
+      color: white;
+      animation: fadeIn 1.5s ease;
+    }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    header a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      background-color: #f4d03f;
+      color: #1e8449;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    header a:hover {
+      background-color: #fff59d;
+      transform: scale(1.05);
+    }
+
+    /* ---------- SECTIONS ---------- */
+    section {
+      padding: 100px 10%;
+      animation: fadeUp 1s ease forwards;
+    }
+    .divider {
+      width: 70%;
+      height: 4px;
+      background-color: #d1d1d1;
+      border: none;
+      margin: 60px auto;
+      border-radius: 3px;
+    }
+
+    /* ---------- FLEX CONTENT ---------- */
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .text {
+      flex: 1;
+      min-width: 300px;
+      animation: fadeUp 1s ease;
+    }
+    .text h2 {
+      color: #1e8449;
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+    .text p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #444;
+    }
+    .text a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 22px;
+      background-color: #1e8449;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .text a:hover {
+      background-color: #27ae60;
+      transform: translateY(-3px);
+    }
+
+    /* ---------- IMAGES & ANIMATION ---------- */
+    img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.4s ease;
+    }
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    /* ---------- SERVICES ---------- */
+    .service {
+      margin: 60px 0;
+      text-align: center;
+    }
+    .service h3 {
+      font-size: 28px;
+      color: #145a32;
+      margin-bottom: 20px;
+    }
+    .service img {
+      width: 90%;
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background-color: #1e8449;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ---------- ANIMATIONS ---------- */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 36px;
+      }
+      .text h2 {
+        font-size: 28px;
+      }
+      .content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>WELCOME TO BHOOMIRAKSHA</h1>
+    <p>We are here to manage your property when you're not in the country or state.<br>
+       To know more about us, just read the below sections.</p>
+    <a href="https://wa.link/pcu6a7" target="_blank">📞 Contact us on WhatsApp</a>
+  </header>
+
+  <!-- WHAT WE DO -->
+  <section id="what-we-do">
+    <div class="content">
+      <div class="text">
+        <h2>WHAT WE DO</h2>
+        <p>
+          BhoomiRaksha is a Bangalore-based professional property management company serving clients to manage their property investment portfolio through flexible and highly effective services.
+          We monitor the client's property by visiting the location periodically depending on the chosen subscription and provide photo/video updates via email or other communication platforms.
+          Regular cleaning and fencing ensure that your land remains protected from encroachment.
+        </p>
+        <a href="https://wa.link/pcu6a7" target="_blank">Learn More ></a>
+      </div>
+      <lottie-player 
+        src="https://lottie.host/e9ff51b7-bcc0-4f4e-b561-81c0e9590f1b/T9Ai9zjQRg.json"
+        background="transparent"
+        speed="1"
+        style="width: 350px; height: 350px;"
+        loop autoplay>
+      </lottie-player>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2 style="text-align:center; color:#1e8449;">• SERVICES WE PROVIDE</h2>
+
+    <div class="service">
+      <h3>• PROPERTY MAINTENANCE</h3>
+      <img src="C:\Users\bhoom\OneDrive\Desktop\webpage34\bh.png.png" alt="Property Maintenance">
+    </div>
+
+    <div class="service">
+      <h3>• WE PROTECT YOUR LAND</h3>
+      <img src="C:\Users\bhoom\OneDrive\Desktop\webpage34\bgh.jpg" alt="Protect Your Land">
+    </div>
+
+    <div class="service">
+      <h3>• FENCING</h3>
+      <img src="C:\Users\bhoom\OneDrive\Desktop\webpage34\3.png" alt="Fencing">
+    </div>
+
+    <div class="service">
+      <h3>• VIDEO FOOTAGE OF YOUR PROPERTY (MONTHLY ONCE)</h3>
+      <img src="C:\Users\bhoom\OneDrive\Desktop\webpage34\4.png" alt="Video Footage">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 BhoomiRaksha Property Management | Designed with ❤️ in India</p>
+  </footer>
+
+</body>
+</html>
